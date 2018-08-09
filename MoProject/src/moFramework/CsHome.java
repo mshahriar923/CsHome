@@ -14,7 +14,7 @@ public class CsHome {
 		WebDriver chromeBrowser = new ChromeDriver();
 		chromeBrowser.get("http://www.clicksafety.com");
 		Thread.sleep(5000);
-		WebElement loginButton = chromeBrowser.findElement(By.id("btnLoginLinks"));
+		WebElement loginButton = chromeBrowser.findElement(By.id("btnLoginLink"));
 		if (loginButton.isDisplayed()) {
 			loginButton.click();
 			System.out.println("This CS homepage is up and running");
